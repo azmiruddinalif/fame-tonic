@@ -10,14 +10,14 @@ const Header = () => {
   return (
     <header className="w-full bg-black text-white mt-2">
       <Container>
-        <GridRow className="py-6 items-center relative">
+        <GridRow className="py-6 relative">
           <div className="col-span-12 md:col-span-5 md:col-start-2 flex justify-center md:justify-start">
             <Link href="/" className="text-3xl font-bold font-urbanist">
               <Logo />
             </Link>
           </div>
 
-          <div className="hidden md:flex col-span-5 justify-end items-center">
+          <div className="hidden md:flex col-span-5 justify-end">
             <nav className="flex gap-8 text-lg font-medium font-figTree text-ash">
               <Link href="/about">About us</Link>
               <Link href="/contact">Contact</Link>
