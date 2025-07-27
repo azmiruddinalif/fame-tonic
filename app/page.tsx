@@ -1,3 +1,4 @@
+import Banner from "@/components/banner";
 import Container from "@/components/common/Container";
 import DiscountBar from "@/components/common/DiscountBar";
 import Header from "@/components/common/Header";
@@ -9,7 +10,7 @@ export default function Home() {
       <Container>
         <div>
           <Header />
-          <h1 className="font-figTree">Hello world</h1>
+          <Banner />
         </div>
       </Container>
     </>

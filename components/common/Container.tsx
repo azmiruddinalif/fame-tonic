@@ -4,7 +4,9 @@ import { ContainerProps } from "@/types/container-type";
 
 const Container = ({ children, className }: ContainerProps) => {
   return (
-    <div className={clsx("max-w-[1200px] w-full mx-auto px-4", className)}>
+    <div
+      className={clsx("w-full max-w-[1200px] mx-auto px-3 xl:px-0", className)}
+    >
       {children}
     </div>
   );

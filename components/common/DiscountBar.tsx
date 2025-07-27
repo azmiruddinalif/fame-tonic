@@ -1,19 +1,24 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
+import RocketIcon from "@/public/png/🚀.png";
 
-type DiscountBarProps = {
-  message?: string;
-};
-
-const DiscountBar = ({
-  message = "Extra 25% OFF, Limited Spots – start your journey today!",
-}: DiscountBarProps) => {
+const DiscountBar = () => {
   return (
-    <div className="w-full font-figTree bg-gradient-to-r from-red to-blue text-[22px] text-white text-center py-2.5 font-semibold flex items-center justify-center gap-2">
-      🚀
-      <span className="text-blue01">FRESH BEGINNINGS SALE:</span>{" "}
-      <span>{message}</span>
+    <div className="w-full font-figTree bg-gradient-to-r from-red to-blue text-white text-center px-5 py-5 lg:py-2">
+      <div className="text-[14px] sm:text-[20px] font-medium leading-tight sm:flex-nowrap text-white px-5">
+        <Image
+          src={RocketIcon}
+          alt="rocket"
+          width={20}
+          height={20}
+          className="object-contain inline"
+        />
+        <span className="text-blue01 font-bold pl-1 uppercase">
+          FRESH BEGINNINGS SALE:
+        </span>{" "}
+        Extra 25% OFF, Limited Spots – start your journey today!
+      </div>
     </div>
   );
 };
